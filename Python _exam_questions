@@ -1,0 +1,387 @@
+1) list the salient features of python?
+Solution: 
+Readable and Simple Syntax:
+* Python's syntax is clean and easy to read, which makes it an excellent language for beginners and promotes code readability.
+
+High-level Language:
+* Python is a high-level programming language, abstracting low-level details and providing a more straightforward development experience.
+
+Interpreted Language:
+* Python is an interpreted language, allowing for interactive testing and development without the need for compilation.
+
+Dynamic Typing:
+* Python uses dynamic typing, allowing variables to change types at runtime. This can lead to more flexible and concise code.
+
+Object-Oriented:
+* Python supports object-oriented programming (OOP) principles, making it easy to organize and structure code using classes and objects.
+
+Extensive Standard Library:
+* Python comes with a rich standard library that includes modules and packages for a wide range of tasks, reducing the need for external libraries.
+
+Large Ecosystem:
+* Python has a vast ecosystem of third-party libraries and frameworks for various applications, including web development, data science, machine learning, and more.
+
+Cross-platform Compatibility:
+* Python is cross-platform, meaning that Python code can run on different operating systems without modification.
+
+Community Support:
+* Python has a large and active community of developers, providing support through forums, documentation, and collaborative development.
+
+Integration Capabilities:
+* Python can easily integrate with other languages, making it suitable for incorporating existing code or working in heterogeneous environments.
+======================================================================================================================================================================================
+
+2) define variable? list the rules for declaring for declaring a variable in python?
+
+Solution:
+
+Variable in Python:
+* Symbolic name representing a value.
+* Dynamically typed (no explicit type declaration).
+* Assigned using the equal (=) operator.
+
+Variable Naming Rules:
+
+* Letters (a-z, A-Z), numbers (0-9), underscores (_) allowed.
+* Cannot start with a number.
+* Case-sensitive.
+* Avoid using reserved words.
+
+Example: 
+age = 25
+name = "Alice"
+age = age + 1
+print("Name:", name)
+print("Age:", age)
+
+======================================================================================================================================================================================
+3) what is keyword? list all the keywords supported in python?
+Solution:
+In Python, a keyword is a reserved word that has a specific meaning and is used to define the syntax and structure of the language. 
+Keywords cannot be used as identifiers (variable names, function names, etc.) since they have a predefined purpose in the language.
+
+Below are the keywords:
+
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+======================================================================================================================================================================================
+4) what are operators? explain the different types of operators supported in python?
+Solution:
+In Python, operators are special symbols or keywords that perform operations on operands. Operands are the values or variables that the operator acts upon. 
+Python supports various types of operators, which can be categorized as follows:
+
+* Arithmetic Operators:
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+Floor Division (//): Returns the integer part of the division.
+Modulus (%): Returns the remainder of the division.
+Exponentiation (**): Raises the left operand to the power of the right operand.
+
+Example: 
+a = 10
+b = 3
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.3333...
+print(a // b)  # 3
+print(a % b)   # 1
+print(a ** b)  # 1000
+
+* Comparison Operators:
+Equal to (==)
+Not equal to (!=)
+Greater than (>)
+Less than (<)
+Greater than or equal to (>=)
+Less than or equal to (<=)
+
+Example:
+x = 5
+y = 10
+print(x == y)  # False
+print(x != y)  # True
+print(x > y)   # False
+print(x < y)   # True
+print(x >= y)  # False
+print(x <= y)  # True
+
+* Logical Operators:
+Logical AND (and)
+Logical OR (or)
+Logical NOT (not)
+
+Example: 
+a = True
+b = False
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+
+* Assignment Operators:
+Assignment (=)
+Add and assign (+=)
+Subtract and assign (-=)
+Multiply and assign (*=)
+Divide and assign (/=)
+Modulus and assign (%=)
+Floor division and assign (//=)
+Exponentiate and assign (**=)
+
+Example:
+x = 5
+x += 3   # equivalent to x = x + 3
+print(x)  # 8
+
+* Bitwise Operators:
+Bitwise AND (&)
+Bitwise OR (|)
+Bitwise XOR (^)
+Bitwise NOT (~)
+Left shift (<<)
+Right shift (>>)
+
+Example:
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+print(a & b)   # 1 (Bitwise AND)
+print(a | b)   # 7 (Bitwise OR)
+print(a ^ b)   # 6 (Bitwise XOR)
+print(~a)      # -6 (Bitwise NOT)
+print(a << 1)  # 10 (Left shift by 1)
+print(a >> 1)  # 2 (Right shift by 1)
+
+* Membership Operators:
+in: Returns True if a value is found in the sequence.
+not in: Returns True if a value is not found in the sequence.
+
+Example:
+list_example = [1, 2, 3, 4, 5]
+print(3 in list_example)   # True
+print(6 not in list_example)  # True
+
+* Identity Operators:
+is: Returns True if both operands are the same object.
+is not: Returns True if both operands are different objects.
+
+Example:
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+
+print(x is y)   # False
+print(x is not y)  # True
+print(x is z)   # True
+========================================================================================================================================================================================
+
+5) what is type casting? explain with an example?
+Solution:
+Type casting, also known as type conversion, is the process of converting a variable from one data type to another. 
+In Python, this can be done explicitly using built-in functions that correspond to the desired data type. Here's an example:
+
+# Example 1: Integer to Float
+integer_number = 42
+float_number = float(integer_number)
+print(float_number)  # Output: 42.0
+
+# Example 2: Float to Integer
+float_number = 3.14
+integer_number = int(float_number)
+print(integer_number)  # Output: 3
+
+# Example 3: Integer to String
+integer_value = 123
+string_value = str(integer_value)
+print(string_value)  # Output: '123'
+
+# Example 4: String to Integer
+string_value = '456'
+integer_value = int(string_value)
+print(integer_value)  # Output: 456
+
+# Example 5: String to Float
+string_value = '7.89'
+float_value = float(string_value)
+print(float_value)  # Output: 7.89
+========================================================================================================================================================================================
+
+6) explain condition execution statements with example and flowchart?
+Solution:
+Conditional execution statements in programming allow you to control the flow of a program based on certain conditions.
+The primary construct for this in Python is the if, elif (else if), and else statements. Here's an explanation with an example and a simple flowchart:
+# Example: Checking the sign of a number
+number = float(input("Enter a number: "))
+
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+FLOWCHART - A flowchart is a graphical representation of a program's logic. Here's a simplified flowchart for the above example:
+
++---------------------+
+|  Enter a number     |
++---------------------+
+           |
+           v
++---------------------+
+|  Is number > 0?     |
++--------|------------+
+         |
+         v
++---------------------+
+|   Print "Positive"   |
++--------|------------+
+         |
+         v
++---------------------+
+|  Is number < 0?     |
++--------|------------+
+         |
+         v
++---------------------+
+|   Print "Negative"   |
++--------|------------+
+         |
+         v
++---------------------+
+|   Print "Zero"       |
++---------------------+
+==========================================================================================================================================================================================
+7) what are iterations? explain definite and indefinite statements with syntax?
+Solution:
+Iterations, also known as loops, are programming constructs that allow a set of instructions to be repeated multiple times.
+In Python, there are two main types of loop statements: definite and indefinite.
+
+Definite Iteration (for loop):
+A definite iteration involves iterating over a sequence of elements for a known number of times.
+The for loop in Python is commonly used for this purpose.
+
+Syntax
+for variable in sequence:
+
+Example:
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+(In this example, the for loop iterates over each element in the fruits list, and the print(fruit) statement is executed during each iteration.)
+
+Indefinite Iteration (while loop):
+An indefinite iteration involves repeating a set of instructions as long as a certain condition is true.
+The while loop in Python is commonly used for this purpose.
+
+Syntax:
+while condition:
+
+Example:
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+(In this example, the while loop continues iterating as long as the count is less than 5. The print(count) statement is executed during each iteration, and count is incremented.)
+=======================================================================================================================================================================================
+
+8) Explain the break and continue with an example program?
+Solution:
+In Python, break and continue are control flow statements used within loops to alter their normal execution.
+
+* Break statement:
+The break statement is used to exit a loop prematurely. It is typically used within an if statement to check a certain condition, and if the condition is met, 
+the break statement is executed, causing the loop to terminate immediately.
+Example:
+# Using break to exit a loop
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for number in numbers:
+    if number == 5:
+        print("Number 5 found. Exiting the loop.")
+        break
+    print(number)
+(In this example, the loop iterates through the numbers list. When it encounters the value 5, the if statement triggers the break statement, and the loop exits.)
+
+* continue statement:
+The continue statement is used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.
+Example:
+# Using continue to skip an iteration
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for number in numbers:
+    if number % 2 == 0:
+        # Skip even numbers
+        continue
+    print(number)
+(In this example, the loop iterates through the numbers list. The if statement checks if the current number is even (number % 2 == 0).
+If true, the continue statement is executed, skipping the print(number) statement for even numbers.)
+========================================================================================================================================================================================
+
+9) write a python program for the following
+a) Find largest pf 4 numbers.
+b) Display grades upon the marks 
+c) Check whether the given is leap year or not 
+d) Check whether the given  number is palindrome or not
+e) Check whether the given number is armstrong or not
+f) Check whether the given number is strong number or not 
+g) Check whether the given number is perfect or not 
+h) Find the factorial of a given number
+
+Solution:
+# a) Find the largest of 4 numbers
+numbers = [10, 24, 15, 8]
+largest_number = max(numbers)
+print("a) Largest number:", largest_number)
+
+# b) Display grades based on marks
+marks = 85
+grade = 'A' if marks >= 90 else 'B' if marks >= 80 else 'C' if marks >= 70 else 'D' if marks >= 60 else 'F'
+print("b) Grade:", grade)
+
+# c) Check whether the given year is a leap year or not
+year = 2024
+is_leap_year = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+print("c) Leap year:", is_leap_year)
+
+# d) Check whether the given number is palindrome or not
+number = 121
+is_palindrome = str(number) == str(number)[::-1]
+print("d) Palindrome:", is_palindrome)
+
+# e) Check whether the given number is Armstrong or not
+armstrong_number = 153
+is_armstrong = sum(int(digit) ** 3 for digit in str(armstrong_number)) == armstrong_number
+print("e) Armstrong:", is_armstrong)
+
+# f) Check whether the given number is a strong number or not
+strong_number = 145
+is_strong = sum(int(digit) for digit in str(strong_number)) == strong_number
+print("f) Strong number:", is_strong)
+
+# g) Check whether the given number is perfect or not
+perfect_number = 28
+is_perfect = sum(i for i in range(1, perfect_number) if perfect_number % i == 0) == perfect_number
+print("g) Perfect number:", is_perfect)
+
+# h) Find the factorial of a given number
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
+
+number_for_factorial = 5
+factorial_result = factorial(number_for_factorial)
+print("h) Factorial:", factorial_result)
+==========================================================================================================================================================================================
+
+
+
+
+
+
+
+
